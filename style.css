@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: linear-gradient(to bottom right, #000000, #8000ff);
+  overflow: hidden;
+}
+
+header {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav button {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+nav button.active {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#content {
+  z-index: 2;
+  width: 45%;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+#content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+form button {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #dddddd;
+}
+
+#canvas-container {
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#bg-animation {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tech-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255,255,255,0.1);
+}
+
+.tech-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon-container img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.icon-container img:hover {
+  transform: scale(1.2);
+}
